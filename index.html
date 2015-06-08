@@ -39,7 +39,7 @@
                 </section>
 
                 <section>
-                    <img class="background-transparent" style="border:none; height: 120px" src="images/logo_gris.png">
+                    <div id="centroVe" style="margin:0 auto; margin: 0px auto; width: 232px; height: 232px;"></div> 
                     <p>
                         Es una 
                         <span style="font-weight: 700">
@@ -51,7 +51,7 @@
                 <!-- Situacion Problema -->
                 <section>
                     <section>
-                        <h2>SITUACION PROBLEMA</h2>
+                        <h2>SITUACIÓN PROBLEMA</h2>
                     </section>
                 </section>
 
@@ -102,10 +102,10 @@
                 <!--Metodologia aplicada-->
                 <section data-background-transition="slide" data-transition="linear">
                     <section>
-                        <h2>METODOLOGIA Y TECNICAS APLICADAS</h2>
+                        <h2>METODOLOGÍA Y TECNICAS APLICADAS</h2>
                     </section>
                     <section>
-                        <h2>PROGRAMACION EXTREMA (XP)</h2>
+                        <h2>PROGRAMACIÓN EXTREMA (XP)</h2>
                     </section>
                     <section>
                         <h2>ROLES EN XP</h2>
@@ -137,7 +137,7 @@
                         <h2>CICLO DE VIDA DE XP</h2>
                     </section>
                     <section>
-                        <h2>EXPLORACION</h2>
+                        <h2>EXPLORACIÓN</h2>
                         <p>
                             En esta fase los clientes realizan las 
                             <span style="font-weight:700"> 
@@ -147,7 +147,7 @@
                         </p>
                     </section>
                     <section>
-                        <h2>PLANIFICACION</h2>
+                        <h2>PLANIFICACIÓN</h2>
                         <p>
                             Durante esta fase se 
                             <span style="font-weight:700">
@@ -156,7 +156,7 @@
                         </p>
                     </section>
                     <section>
-                        <h2>ITERACION</h2>
+                        <h2>ITERACIÓN</h2>
                         <p>
                             En esta fase se decide el 
                             <span style="font-weight:700">
@@ -166,7 +166,7 @@
                         </p>
                     </section>
                     <section>
-                        <h2>PRODUCCION</h2>
+                        <h2>PRODUCCIÓN</h2>
                         <p>
                             En esta fase el producto sale de un ambiente de desarrollo a uno de produccion.
                         </p>
@@ -195,7 +195,7 @@
                 <!--Implementacion de la metodologia-->
                 <section>
                     <section>
-                        <h2>IMPLEMENTACION DE LA METODOLOGIA</h2>
+                        <h2>IMPLEMENTACIÓN DE LA METODOLOGÍA</h2>
                     </section>
 
                     <!--Roles en el desarrollo-->
@@ -218,7 +218,7 @@
 
                         <!-- Fase de exploracion -->
                         <h2>
-                            FASE DE EXPLORACION
+                            FASE DE EXPLORACIÓN
                         </h2>
                         <p>
                             Durante esta fase se realizaron las 
@@ -226,6 +226,26 @@
                                 historias de usuario
                             </span> 
                             y se definieron las herramientas a utilizar para el desarrollo</p>
+                    </section>
+
+                    <!--CARACTERISTICAS DEL SISTEMA-->
+                    <section>
+                        <h2>
+                            CARACTERÍSTICAS DEL SISTEMA
+                        </h2>
+                        <ul>
+                            <li>Registro de usuarios con roles</li>
+                            <li>Actualización de roles de usuarios.</li>
+                            <li>Eliminar usuarios registrados</li>
+                            <li>Registrar, editar y eliminar empleados.</li>
+                            <li>Ver perfil de empleado.</li>
+                            <li>Listar empleados activos e inactivos de la empresa.</li>
+                            <li>Generar y actualizar contratos por empleado.</li>
+                            <li>Gestionar  vacaciones y permisos de los empleados.</li>
+                            <li>Gestion de notificaciones.</li>
+                            <li>Comunicación en tiempo real de eventos.</li>
+                            <li>Registro de eventos en el sistema.</li>
+                        </ul>
                     </section>
 
                     <section>
@@ -258,7 +278,7 @@
 
                     <!--Fase de planificacion-->
                     <section>
-                        <h2>FASE DE PLANIFICACION</h2>
+                        <h2>FASE DE PLANIFICACIÓN</h2>
                         <p>
                             En esta fase se 
                             <span style="font-weight:700">
@@ -271,71 +291,48 @@
                             construidas por el cliente
                         </p>
                     </section>
-
                 </section>
-
-                <section>
-                    <h2>FASE DE ITERACIONES</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Value</th>
-                                <th>Quantity</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Apples</td>
-                                <td>$1</td>
-                                <td>7</td>
-                            <tr>
-                            <tr>
-                                <td>Lemonade</td>
-                                <td>$2</td>
-                                <td>18</td>
-                            <tr>
-                            <tr>
-                                <td>Bread</td>
-                                <td>$3</td>
-                                <td>2</td>
-                            <tr>
-                        </tbody>
-                    </table>
-                </section>
-
 
             </div>
 
-        </div>
+            <script src="lib/js/head.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+            <script src="js/reveal.js"></script>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
+            <script>
 
-        <script>
+                // Full list of configuration options available at:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
 
-            // Full list of configuration options available at:
-            // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
+                    transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                    // Optional reveal.js plugins
+                    dependencies: [
+                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { 
+                            return !!document.querySelector( 'pre code' ); 
+                        }, callback: function() { 
+                            hljs.initHighlightingOnLoad(); 
+                        } 
+                        },
+                        { src: 'plugin/zoom-js/zoom.js', async: true },
+                        { src: 'plugin/notes/notes.js', async: true }
+                    ]
+                });
 
-                // Optional reveal.js plugins
-                dependencies: [
-                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'plugin/zoom-js/zoom.js', async: true },
-                    { src: 'plugin/notes/notes.js', async: true }
-                ]
-            });
+            </script>
+            <script src="js/jquery.lazylinepainter-1.1.min.js"></script>
+            <script src="js/raphael-min.js"></script>
+            <script src="js/main.js"></script>
 
-        </script>
 
-    </body>
-</html>
+            </body>
+        </html>
